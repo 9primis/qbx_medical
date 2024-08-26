@@ -6,8 +6,11 @@
 exports.qbx_medical:Revive(player)
 ```
 **PARAMETERS**
+
 	 player: `table` | `number`
+  
 **RETURN STATEMENT**
+
 	 N/A
 
 ## Heal
@@ -17,8 +20,11 @@ exports.qbx_medical:Revive(player)
 exports.qbx_medical:Heal(player)
 ```
 **PARAMETERS**
+
 	 player: `number`
+  
 **RETURN STATEMENT**
+
 	 N/A
 
 ## HealPartially
@@ -28,8 +34,11 @@ exports.qbx_medical:Heal(player)
 exports.qbx_medical:healPartially(src)
 ```
 **PARAMETERS**
+
 	 src: `number`
+  
 **RETURN STATEMENT**
+
 	 N/A
 
 ## GetPlayerStatus
@@ -39,13 +48,21 @@ exports.qbx_medical:healPartially(src)
 exports.qbx_medical:GetPlayerStatus(src)
 ```
 **PARAMETERS**
+
 	 src: `number`
+  
 **RETURN STATEMENT**
+
 	 status: `table`
+  
 		- injuries: `{string}[]`
+  
 		- bleedLevel: `number`
+  
 		- bleedState: `string`
+  
 		- damageCauses: `{ weaponHash: number = true }[]`
+  
 	**EXAMPLE**
 ```lua
 	{
