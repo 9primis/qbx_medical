@@ -176,7 +176,9 @@ exports.qbx_medical:KillPlayer(attacker, weapon)
 ```
 **PARAMETERS**
 	 attacker: `number`
+  
 	 weapon: `number` 
+  
 **RETURN STATEMENT**
 	 N/A
 
@@ -213,6 +215,7 @@ exports.qbx_medical:StartLastStand(player)
 ```
 **PARAMETERS**
 	 attacker: `number`
+  
 	 weapon: `number`
   
 **RETURN STATEMENT**
