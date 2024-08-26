@@ -12,6 +12,7 @@ TriggerEvent('qbx_medical:client:heal', type)
 		 - `string`: (Anything other than 'full') Heals only minor wounds
 **RETURN STATEMENT**
 	 N/A
+  
 # **MAIN MODULE**
 ## isDead
 ---
@@ -21,6 +22,7 @@ exports.qbx_medical:isDead()
 ```
 **PARAMETERS**
 	 N/A
+  
 **RETURN STATEMENT**
 	 state: `true` | `false`
 
@@ -32,6 +34,7 @@ exports.qbx_medical:IsLaststand()
 ```
 **PARAMETERS**
 	 N/A
+  
 **RETURN STATEMENT**
 	 state: `true` | `false`
 
@@ -43,6 +46,7 @@ exports.qbx_medical:GetDeathTime()
 ```
 **PARAMETERS**
 	 N/A
+  
 **RETURN STATEMENT**
 	 timer: `number`
 
@@ -54,6 +58,7 @@ exports.qbx_medical:GetLaststandTime()
 ```
 **PARAMETERS**
 	 N/A
+  
 **RETURN STATEMENT**
 	 timer: `number`
 
@@ -65,6 +70,7 @@ exports.qbx_medical:IncrementDeathTime(seconds)
 ```
 **PARAMETERS**
 	 seconds: `number`
+  
 **RETURN STATEMENT**
 	N/A
 
@@ -76,6 +82,7 @@ exports.qbx_medical:IncrementLaststandTime(seconds)
 ```
 **PARAMETERS**
 	 seconds: `number`
+  
 **RETURN STATEMENT**
 	N/A
 
@@ -87,6 +94,7 @@ exports.qbx_medical:GetRespawnHoldTimeDeprecated()
 ```
 **PARAMETERS**
 	N/A
+ 
 **RETURN STATEMENT**
 	timer: `number`
 
@@ -98,8 +106,10 @@ exports.qbx_medical:MakePedLimp()
 ```
 **PARAMETERS**
 	N/A
+ 
 **RETURN STATEMENT**
 	N/A
+ 
 **TODO**
 	This export should not check any conditions, but force the ped to limp instead.
 
@@ -111,12 +121,12 @@ exports.qbx_medical:SendBleedAlert()
 ```
 **PARAMETERS**
 	N/A
+ 
 **RETURN STATEMENT**
 	N/A
 
-
-
 # **DAMAGE MODULE**
+
 ## EnableDamageEffects
 ---
 "Enables all effects related to player damage"
@@ -125,8 +135,10 @@ exports.qbx_medical:EnableDamageEffects()
 ```
 **PARAMETERS**
 	 N/A
+  
 **RETURN STATEMENT**
 	 N/A
+  
 ## DisableDamageEffects
 ---
 "Disable all effects related to player damage"
@@ -135,9 +147,12 @@ exports.qbx_medical:DisableDamageEffects()
 ```
 **PARAMETERS**
 	 N/A
+  
 **RETURN STATEMENT**
 	 N/A
+  
 # **DEAD MODULE**
+
 ## PlayDeadAnimation
 ---
 "Applies death animation on player, selecting between being on foot, in vehicle, or handcuffed."
@@ -146,6 +161,7 @@ exports.qbx_medical:PlayDeadAnimation(player)
 ```
 **PARAMETERS**
 	 N/A
+  
 **RETURN STATEMENT**
 	 N/A
 
@@ -169,6 +185,7 @@ exports.qbx_medical:AllowRespawn()
 ```
 **PARAMETERS**
 	 N/A
+  
 **RETURN STATEMENT**
 	 N/A
 
@@ -180,6 +197,7 @@ exports.qbx_medical:DisableRespawn()
 ```
 **PARAMETERS**
 	 N/A
+  
 **RETURN STATEMENT**
 	 N/A
 
@@ -192,13 +210,16 @@ exports.qbx_medical:StartLastStand(player)
 ```
 **PARAMETERS**
 	 attacker: `number`
-	 weapon: `number` 
+	 weapon: `number`
+  
 **RETURN STATEMENT**
 	 N/A
-NOTE
+  
+**NOTE**
 	This function uses "InteractSound", if that should be of any concern.
 
 # **WOUNDING MODULE**
+
 ## MakePlayerBlackout
 ---
 "Triggers a blackout effect on player"
@@ -207,6 +228,7 @@ exports.qbx_medical:MakePlayerBlackout()
 ```
 **PARAMETERS**
 	 N/A
+  
 **RETURN STATEMENT**
 	 N/A
 
@@ -218,6 +240,7 @@ exports.qbx_medical:makePlayerFadeOut()
 ```
 **PARAMETERS**
 	 N/A
+  
 **RETURN STATEMENT**
 	 N/A
 
@@ -229,6 +252,7 @@ exports.qbx_medical:removeBleed(level)
 ```
 **PARAMETERS**
 	 level: `number`
+  
 **RETURN STATEMENT**
 	 N/A
 
@@ -240,8 +264,10 @@ exports.qbx_medical:EnableBleeding()
 ```
 **PARAMETERS**
 	 N/A
+  
 **RETURN STATEMENT**
 	 N/A
+  
 ## DisableBleeding
 ---
 "Disable all systems associated with bleeding. This also disables damage taken and any ill effects such as blacking out."
