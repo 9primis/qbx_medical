@@ -2,7 +2,7 @@
 
 ## qbx_medical:client:heal
 ---
-"Heals players wounds, either all injuries or minor injuries depending on paramter"
+"Heals players wounds, either all injuries or minor injuries depending on parameter"
 ```lua
 TriggerEvent('qbx_medical:client:heal', type)
 ```
@@ -10,7 +10,6 @@ TriggerEvent('qbx_medical:client:heal', type)
 	 type?: `'full'` | `string`
   
 		 - `'full'`: Heals all wounds
-   
 		 - `string`: (Anything other than 'full') Heals only minor wounds
    
 **RETURN STATEMENT**
