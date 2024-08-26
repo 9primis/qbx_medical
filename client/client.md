@@ -8,8 +8,11 @@ TriggerEvent('qbx_medical:client:heal', type)
 ```
 **PARAMETERS**
 	 type?: `'full'` | `string`
+  
 		 - `'full'`: Heals all wounds
+   
 		 - `string`: (Anything other than 'full') Heals only minor wounds
+   
 **RETURN STATEMENT**
 	 N/A
   
