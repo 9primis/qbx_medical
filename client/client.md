@@ -7,12 +7,14 @@
 TriggerEvent('qbx_medical:client:heal', type)
 ```
 **PARAMETERS**
+
 	 type?: `'full'` | `string`
   
 		 - `'full'`: Heals all wounds
 		 - `string`: (Anything other than 'full') Heals only minor wounds
    
 **RETURN STATEMENT**
+
 	 N/A
   
 # **MAIN MODULE**
@@ -23,9 +25,11 @@ TriggerEvent('qbx_medical:client:heal', type)
 exports.qbx_medical:isDead()
 ```
 **PARAMETERS**
+
 	 N/A
   
 **RETURN STATEMENT**
+
 	 state: `true` | `false`
 
 ## IsLaststand
@@ -35,9 +39,11 @@ exports.qbx_medical:isDead()
 exports.qbx_medical:IsLaststand()
 ```
 **PARAMETERS**
+
 	 N/A
   
 **RETURN STATEMENT**
+
 	 state: `true` | `false`
 
 ## GetDeathTime
@@ -47,9 +53,11 @@ exports.qbx_medical:IsLaststand()
 exports.qbx_medical:GetDeathTime()
 ```
 **PARAMETERS**
+
 	 N/A
   
 **RETURN STATEMENT**
+
 	 timer: `number`
 
 ## GetLaststandTime
@@ -59,9 +67,11 @@ exports.qbx_medical:GetDeathTime()
 exports.qbx_medical:GetLaststandTime()
 ```
 **PARAMETERS**
+
 	 N/A
   
 **RETURN STATEMENT**
+
 	 timer: `number`
 
 ## IncrementDeathTime
@@ -71,9 +81,11 @@ exports.qbx_medical:GetLaststandTime()
 exports.qbx_medical:IncrementDeathTime(seconds)
 ```
 **PARAMETERS**
-	 seconds: `number`
+
+	seconds: `number`
   
 **RETURN STATEMENT**
+
 	N/A
 
 ## IncrementLaststandTime
@@ -83,9 +95,11 @@ exports.qbx_medical:IncrementDeathTime(seconds)
 exports.qbx_medical:IncrementLaststandTime(seconds)
 ```
 **PARAMETERS**
+
 	 seconds: `number`
   
 **RETURN STATEMENT**
+
 	N/A
 
 ## GetRespawnHoldTimeDeprecated
@@ -95,9 +109,11 @@ exports.qbx_medical:IncrementLaststandTime(seconds)
 exports.qbx_medical:GetRespawnHoldTimeDeprecated()
 ```
 **PARAMETERS**
+
 	N/A
  
 **RETURN STATEMENT**
+
 	timer: `number`
 
 ## MakePedLimp
@@ -107,12 +123,15 @@ exports.qbx_medical:GetRespawnHoldTimeDeprecated()
 exports.qbx_medical:MakePedLimp()
 ```
 **PARAMETERS**
+
 	N/A
  
 **RETURN STATEMENT**
+
 	N/A
  
 **TODO**
+
 	This export should not check any conditions, but force the ped to limp instead.
 
 ## SendBleedAlert
@@ -122,9 +141,11 @@ exports.qbx_medical:MakePedLimp()
 exports.qbx_medical:SendBleedAlert()
 ```
 **PARAMETERS**
+
 	N/A
  
 **RETURN STATEMENT**
+
 	N/A
 
 # **DAMAGE MODULE**
@@ -136,9 +157,11 @@ exports.qbx_medical:SendBleedAlert()
 exports.qbx_medical:EnableDamageEffects()
 ```
 **PARAMETERS**
+
 	 N/A
   
 **RETURN STATEMENT**
+
 	 N/A
   
 ## DisableDamageEffects
@@ -148,9 +171,11 @@ exports.qbx_medical:EnableDamageEffects()
 exports.qbx_medical:DisableDamageEffects()
 ```
 **PARAMETERS**
+
 	 N/A
   
 **RETURN STATEMENT**
+
 	 N/A
   
 # **DEAD MODULE**
@@ -162,9 +187,11 @@ exports.qbx_medical:DisableDamageEffects()
 exports.qbx_medical:PlayDeadAnimation(player)
 ```
 **PARAMETERS**
+
 	 N/A
   
 **RETURN STATEMENT**
+
 	 N/A
 
 ## KillPlayer
@@ -174,11 +201,13 @@ exports.qbx_medical:PlayDeadAnimation(player)
 exports.qbx_medical:KillPlayer(attacker, weapon)
 ```
 **PARAMETERS**
+
 	 attacker: `number`
   
 	 weapon: `number` 
   
 **RETURN STATEMENT**
+
 	 N/A
 
 ## AllowRespawn
@@ -188,9 +217,11 @@ exports.qbx_medical:KillPlayer(attacker, weapon)
 exports.qbx_medical:AllowRespawn()
 ```
 **PARAMETERS**
+
 	 N/A
   
 **RETURN STATEMENT**
+
 	 N/A
 
 ## DisableRespawn
@@ -200,9 +231,11 @@ exports.qbx_medical:AllowRespawn()
 exports.qbx_medical:DisableRespawn()
 ```
 **PARAMETERS**
+
 	 N/A
   
 **RETURN STATEMENT**
+
 	 N/A
 
 # **LAST STAND MODULE**
@@ -213,14 +246,17 @@ exports.qbx_medical:DisableRespawn()
 exports.qbx_medical:StartLastStand(player)
 ```
 **PARAMETERS**
+
 	 attacker: `number`
   
 	 weapon: `number`
   
 **RETURN STATEMENT**
+
 	 N/A
   
 **NOTE**
+
 	This function uses "InteractSound", if that should be of any concern.
 
 # **WOUNDING MODULE**
@@ -232,9 +268,11 @@ exports.qbx_medical:StartLastStand(player)
 exports.qbx_medical:MakePlayerBlackout()
 ```
 **PARAMETERS**
+
 	 N/A
   
 **RETURN STATEMENT**
+
 	 N/A
 
 ## MakePlayerFadeOut
@@ -244,9 +282,11 @@ exports.qbx_medical:MakePlayerBlackout()
 exports.qbx_medical:makePlayerFadeOut()
 ```
 **PARAMETERS**
+
 	 N/A
   
 **RETURN STATEMENT**
+
 	 N/A
 
 ## RemoveBleed
@@ -256,9 +296,11 @@ exports.qbx_medical:makePlayerFadeOut()
 exports.qbx_medical:removeBleed(level)
 ```
 **PARAMETERS**
+
 	 level: `number`
   
 **RETURN STATEMENT**
+
 	 N/A
 
 ## EnableBleeding
@@ -268,9 +310,11 @@ exports.qbx_medical:removeBleed(level)
 exports.qbx_medical:EnableBleeding()
 ```
 **PARAMETERS**
+
 	 N/A
   
 **RETURN STATEMENT**
+
 	 N/A
   
 ## DisableBleeding
@@ -280,7 +324,9 @@ exports.qbx_medical:EnableBleeding()
 exports.qbx_medical:DisableBleeding()
 ```
 **PARAMETERS**
+
 	 N/A
   
 **RETURN STATEMENT**
+
 	 N/A
