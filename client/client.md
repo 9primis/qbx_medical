@@ -282,5 +282,6 @@ exports.qbx_medical:DisableBleeding()
 ```
 **PARAMETERS**
 	 N/A
+  
 **RETURN STATEMENT**
 	 N/A
