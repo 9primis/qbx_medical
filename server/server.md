@@ -62,8 +62,7 @@ exports.qbx_medical:GetPlayerStatus(src)
 		- bleedState: `string`
   
 		- damageCauses: `{ weaponHash: number = true }[]`
-  
-	**EXAMPLE**
+**EXAMPLE**
 ```lua
 	{
 		injuries = {
